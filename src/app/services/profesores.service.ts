@@ -7,7 +7,7 @@ import { Profesor } from '../models/Profesor';
   providedIn: 'root'
 })
 export class ProfesoresService {
-  rutaGeneral = 'http://localhost:8080//api/profesor'
+  rutaGeneral = 'http://localhost:8080/api/profesor';
 
   constructor(private http: HttpClient) { }
 

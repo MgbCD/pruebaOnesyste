@@ -1,1 +1,58 @@
-<p>profesor works!</p>
+<header class="bg-custom-green text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-lg font-bold">
+        Registrar Profesor
+      </div>
+      <nav class="space-x-4">
+        <button routerLink="/inicio" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700">Inicio</button>
+        <button routerLink="/profesor-lista" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700">Ver Profesores</button>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="container mx-auto p-4">
+    <h2 class="text-2xl font-bold mb-4">Registro de Profesor</h2>
+    <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+  
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-gray-700">Nombre Completo</label>
+          <input [(ngModel)]="newProfesor.nombreCompleto" class="border p-2 w-full rounded"/>
+        </div>
+        <div>
+          <label class="block text-gray-700">Identificación</label>
+          <input [(ngModel)]="newProfesor.identificacion" class="border p-2 w-full rounded"/>
+        </div>
+        <div>
+          <label class="block text-gray-700">Número de Teléfono</label>
+          <input [(ngModel)]="newProfesor.numeroTelefono" class="border p-2 w-full rounded"/>
+        </div>
+        <div>
+          <label class="block text-gray-700">Email</label>
+          <input [(ngModel)]="newProfesor.email" class="border p-2 w-full rounded"/>
+        </div>
+        <div>
+          <label class="block text-gray-700">Dirección Residencia</label>
+          <input [(ngModel)]="newProfesor.direccionResidencia" class="border p-2 w-full rounded"/>
+        </div>
+        <div>
+          <label class="block text-gray-700">Género</label>
+          <input [(ngModel)]="newProfesor.genero" class="border p-2 w-full rounded"/>
+        </div>
+        <div>
+          <label class="block text-gray-700">Salario</label>
+          <input [(ngModel)]="newProfesor.salario" class="border p-2 w-full rounded"/>
+        </div>
+        <div>
+          <label class="block text-gray-700">Dependencia</label>
+          <input [(ngModel)]="newProfesor.dependencia" class="border p-2 w-full rounded"/>
+        </div>
+        <div class="md:col-span-2">
+          <label class="block text-gray-700">Materia</label>
+          <input [(ngModel)]="newProfesor.materia" class="border p-2 w-full rounded"/>
+        </div>
+      </div>
+      <button (click)="createProfesor()" class="mt-6 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700">Crear</button>
+    </div>
+  </div>
+  

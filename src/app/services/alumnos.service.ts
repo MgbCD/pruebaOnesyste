@@ -18,7 +18,7 @@ export class AlumnosService {
     return this.http.get<Alumno[]>(this.rutaGeneral);
   }
   getAlumno(id: number): Observable<Alumno>{
-    return this.http.get<Alumno>(`${this.rutaGeneral}/${id}` ) //por id es esta sin pliral 
+    return this.http.get<Alumno>(`${this.rutaGeneral}/${id}` ) //por id es esta sin pliral  
 
    
   }
