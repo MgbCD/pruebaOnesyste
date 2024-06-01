@@ -10,17 +10,32 @@
     </div>
   </header>
   
-  <div class="container mx-auto p-4">
-    <h2 class="text-2xl font-bold mb-4">Lista de Alumnos</h2>
-    <ul class="list-disc pl-5">
-      <li *ngFor="let alumno of alumnos" class="mb-2 flex justify-between items-center">
-        <span class="font-semibold">{{ alumno.nombreCompleto }}</span> - {{ alumno.programa }}
-        <div class="flex space-x-2">
-          <button (click)="getAlumno(alumno.id)" class="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-700">Detalles</button>
-          <button (click)="deleteAlumno(alumno.id)" class="bg-red-500 text-white px-2 py-1 rounded hover:bg-red-700">Eliminar</button>
-        </div>
-      </li>
-    </ul>
+  <div class="container mx-auto p-4 bg-white shadow-md rounded">
+    <h2 class="text-2xl font-bold mb-4 text-gray-700">Lista de Alumnos</h2>
+    <table class="table-auto w-full">
+      <thead>
+        <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
+          <th class="px-4 py-2 text-left">Nombres</th>
+          <th class="px-4 py-2 text-left">Identificación</th>
+          <th class="px-4 py-2 text-left">Programa</th>
+          <th class="px-4 py-2 text-left">Acciones</th>
+        </tr>
+      </thead>
+      <tbody class="text-gray-600 text-sm font-light">
+        <ng-container *ngFor="let alumno of alumnos">
+          <tr class="border-b border-gray-200 hover:bg-gray-100">
+            <td class="px-4 py-2">{{ alumno.nombreCompleto }}</td>
+            <td class="px-4 py-2">{{ alumno.identificacion }}</td>
+            <td class="px-4 py-2">{{ alumno.programa }}</td>
+            <td class="px-4 py-2 flex space-x-2">
+              <button (click)="getAlumno(alumno.id)" class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-700">Detalles</button>
+              <button (click)="deleteAlumno(alumno.id)" class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-700">Eliminar</button>
+            </td>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+  </div>
   
     <div *ngIf="selectedAlumno" class="mt-8 bg-white p-6 rounded-lg shadow-md">
       <h3 class="text-xl font-bold mb-4">Detalles del Alumno</h3>
@@ -64,5 +79,5 @@
       </div>
       <button (click)="updateAlumno()" class="mt-6 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700">Guardar</button>
     </div>
-  </div>
+
   
