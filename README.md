@@ -1,27 +1,15 @@
-# Prueba
+<h1 align="center"> Prueba tecnica One System</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+<p>Mayerli Giraldo Bermudez</p>
 
-## Development server
+<div>
+    <h2 align="left">💻Repositorio para el front </h2>
+</div>
+Angular + Typescript + Tailwind
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<div>
+    <h2 align="left"> Como correr el proyecto</h2>
+</div>
+<p>Clonar repositorio: <code>git clone https://github.com/MgbCD/pruebaOnesyste.git</code></p>
+<p>Install Dependencies: Instalar las dependencias necesarias . <code>npm install -g @angular/cli</code> <code>npm install</code> <code>nnpm install tailwindcss</code></p>
+<p>Iniciar servidor: http://localhost:4200/ <code>ng serve</code></p>
